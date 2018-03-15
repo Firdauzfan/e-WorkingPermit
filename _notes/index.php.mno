@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_recartikel" value="name:id;datatype:int,name:judul;datatype:string,name:headline;datatype:string,name:isiartikel;datatype:blob,name:pengirim;datatype:string,name:tanggal;datatype:date" />
+	<infoitem key="UD_rslogin" value="name:id;datatype:int,name:nama;datatype:string,name:username;datatype:string,name:password;datatype:string,name:status;datatype:string,name:active;datatype:string" />
+	<infoitem key="UD_Recordset1" value="name:id;datatype:int,name:judul;datatype:string,name:kategori;datatype:string,name:isiartikel;datatype:blob,name:pengirim;datatype:string,name:tanggal;datatype:datetime,name:urlparam;datatype:string,name:konter;datatype:int" />
+	<infoitem key="UD_rec_wp_input" value="name:num;datatype:string" />
+</info>

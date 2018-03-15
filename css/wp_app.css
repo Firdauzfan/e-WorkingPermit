@@ -1,0 +1,91 @@
+<!--
+.eng {	font-style: italic;
+	font-family: "MS Serif", "New York", serif;
+	font-size: 10px;
+	color: #666;
+}
+.grs {
+	text-decoration: underline;
+	font-family: "MS Serif", "New York", serif;
+	font-size: 14px;
+}
+.jdl {	color: #963;
+	font-family: "MS Serif", "New York", serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+#jd {
+	color: #966;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 24px;
+}
+a:link {
+	text-decoration: none;
+	color: #F00;
+}
+a:visited {
+	text-decoration: none;
+	color: #00F;
+}
+a:hover {
+	text-decoration: underline;
+	color: #0F6;
+}
+a:active {
+	text-decoration: none;
+	color: #FF3;
+}
+a {
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight: bold;
+}
+.appr {
+	font-size: 10px;
+	text-align: center;
+	text-decoration: underline;
+}
+.appd {
+	font-size: 10px;
+}
+.apr {
+	color: #00F;
+	font-weight: bold;
+	text-align: center;
+}
+-->
+
+#confirmBox
+{
+   display:none;
+    background-color: #eee;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    position: fixed;
+    left: 50%;
+    margin-left: -150px;
+    padding: 6px 8px 8px;
+    box-sizing: border-box;
+    text-align: center;
+}
+#confirmBox .button {
+    background-color: #ccc;
+    display: inline-block;
+    border-radius: 3px;
+    border: 1px solid #aaa;
+    padding: 2px;
+    text-align: center;
+    width: 80px;
+    cursor: pointer;
+}
+#confirmBox .button:hover
+{
+    background-color: #ddd;
+}
+#confirmBox .message
+{
+    text-align: left;
+    margin-bottom: 8px;
+}

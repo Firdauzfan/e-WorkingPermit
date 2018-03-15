@@ -1,0 +1,95 @@
+body, input {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 9pt;
+	color:#333333;
+	font-weight: normal;
+}
+
+.hilite{
+	background-color:  #FFFFCC;
+}
+
+#form1 fieldset legend {
+	color: #903;
+}
+
+.judul {font-size: 9pt;
+	font-weight: normal;
+	color: #999;
+	font-family: "Courier New", Courier, monospace;
+}
+
+.pesan {
+	color: #FF6600;
+}
+
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #06C;
+}
+a:hover {
+	text-decoration: underline;
+	color: #933;
+}
+a:active {
+	text-decoration: none;	
+}
+
+.isi {
+	text-align: center;
+	color: #575757;
+	font-size: 9pt;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+.isik {
+	text-align:left;
+	color: #575757;
+	font-size: 9pt;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+.head {
+	font-size: 9pt;
+	color: #00C;
+	background-color:#CCCCCC;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+.as {	font-weight: bold;
+}
+.bd {	text-align: justify;
+}
+.had {
+	color: #900;
+	font-size: 16pt;
+	font-weight: bold;
+	text-decoration: underline;
+	text-align: center;
+}
+.id {
+	font-size: 12px;
+	font-family: "MS Serif", "New York", serif;
+	text-align: left;
+}
+.paging {
+	font-size: 9pt;
+	color: #FFF;
+	font-family: "Courier New", Courier, monospace;
+}
+
+.e_imfo {
+	font-weight: bold;	
+	color: #000;
+}
+
+.forget {
+	text-align: right;
+	color: #575757;
+	font-size: 8pt;
+	font-family: Verdana, Geneva, sans-serif;
+	
+}

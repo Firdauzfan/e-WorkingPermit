@@ -1,0 +1,75 @@
+/* CSS Document */
+body {
+	margin:0px;
+	_margin:0px;
+	padding:0px;
+	_padding:0px;
+	background:#cce0fb;
+	_background:#cce0fb;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	vertical-align:top;
+	 }
+.b_table {
+	border: #9cc3ee double 3px;
+	margin:5px 20px 5px 5px;
+	background:#eef2f8;
+	font-weight:bold;
+	}
+.b_table_isi {
+	border:#86bbff solid 1px;
+	margin:5px;
+	padding:2px;
+	font-size:12px;
+	/* untuk di firefox */
+	-moz-border-radius-topleft:5px;
+	-moz-border-radius-topright:5px;
+	-moz-border-radius-bottomleft:5px;
+	-moz-border-radius-bottomright:5px;
+	/* untuk di safari */
+	-webkit-border-top-left-radius:5px;
+	-webkit-border-top-right-radius:5px;
+	-webkit-border-bottom-left-radius:5px;
+	-webkit-border-bottom-right-radius:5px;}
+.b_table_isi tr tr:hover {background:#d5f9f0;}
+.b_table_isi_logo {background:#eef2f8;}
+.b_table_isi_logo tr:hover {background:#d5f9f0;}
+.b_judul_kategori {
+	background:url(../img/badan_judul_kategori_bg.gif);
+	height:35px;} 
+.b_input {
+	border:#92bbf7 1px  solid;
+	/* untuk di firefox */
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-topright:3px;
+	-moz-border-radius-bottomleft:3px;
+	-moz-border-radius-bottomright:3px;
+	/* untuk di safari */
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-top-right-radius:3px;
+	-webkit-border-bottom-left-radius:3px;
+	-webkit-border-bottom-right-radius:3px;}
+.b_input:hover {
+	border:#4674bb 1px  solid;
+	}
+.b_input:focus {
+	border:#000000 1px inset;
+	background:#fdffd0;}
+.b_tampil {
+	border:#86bbff solid 1px;
+	margin:5px;
+	padding:2px;
+	font-size:12px;
+	/* untuk di firefox */
+	-moz-border-radius-topleft:5px;
+	-moz-border-radius-topright:5px;
+	-moz-border-radius-bottomleft:5px;
+	-moz-border-radius-bottomright:5px;
+	/* untuk di safari */
+	-webkit-border-top-left-radius:5px;
+	-webkit-border-top-right-radius:5px;
+	-webkit-border-bottom-left-radius:5px;
+	-webkit-border-bottom-right-radius:5px;}
+.trimakasih {
+	border:#00F 3px inset;
+	}

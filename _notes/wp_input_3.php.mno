@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rec_wp_input" value="name:no_wp;datatype:string,name:gedung;datatype:string,name:lantai;datatype:string,name:kontraktor;datatype:string,name:nama_kontraktor;datatype:string,name:telp_kontraktor;datatype:string,name:jml_orang;datatype:int,name:jns_pekerjaan;datatype:string,name:dept_incharge;datatype:string,name:nama_dept;datatype:string,name:no_id;datatype:string,name:telp_dept;datatype:string,name:tgl_mulai;datatype:date,name:jam_mulai;datatype:time,name:jam_selesai;datatype:time,name:tgl_selesai;datatype:date,name:approve_kt;datatype:string,name:approve_dt;datatype:string,name:approve_ib;datatype:string,name:approve_fm;datatype:string,name:approve_mt;datatype:string,name:approve_st;datatype:string" />
+</info>

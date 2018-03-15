@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rec_input_option" value="name:id;datatype:int,name:option_name;datatype:blob,name:option_value;datatype:blob,name:autoload;datatype:blob" />
+</info>

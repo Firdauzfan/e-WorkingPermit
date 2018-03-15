@@ -1,0 +1,145 @@
+
+
+/*-------------------
+	Photo area
+--------------------*/
+
+
+#photos{
+	overflow: hidden;
+
+}
+
+#photos:hover a{
+	opacity:0.5;
+}
+
+#photos a,
+#loadMore{
+	background-position: center center;
+	background-color: rgba(14, 14, 14, 0.3);
+	float: left;
+	height: 110px;
+	margin: 1px 1px 0 0;
+	overflow: hidden;
+	width: 145px;
+	
+}
+
+#photos a:hover{
+	opacity:1;
+}
+
+#loadMore{
+	cursor: pointer;
+	line-height: 110px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size:10px;
+}
+
+#loadMore:hover{
+	color:#fff;
+	text-shadow:0 0 4px #fff;
+}
+
+
+/*----------------------
+	Camera slide up
+-----------------------*/
+
+
+
+
+.camTop{
+
+	width:100%;
+	height:66px;
+	top:0;
+	left:0;
+	cursor:pointer;
+}
+
+.settings:hover{
+	background-position:left bottom;
+}
+
+#screen{
+	width:320px;
+	height:280px;
+	background:#ccc;	
+	line-height: 360px;
+    text-align: center;
+	color:#666;
+}
+
+.buttonPane{
+	text-align: buttom;
+}
+
+.buttonNBM{
+	text-align: left;
+}
+
+.blueButton,
+.greenButton{
+	background:url('../img/buttons.png') no-repeat;
+	text-shadow:1px 1px 1px #277c9b;
+	color:#fff !important;
+	width:99px;
+	height:38px;
+	border:none;
+	text-decoration:none;
+	display:inline-block;
+	font-size: 16px;
+	line-height: 32px;
+	text-align: center;
+	margin: 0 4px;
+}
+
+
+.newButton{
+	background:url('../img/bluebutton.png') no-repeat;
+	text-shadow:1px 1px 1px #277c9b;
+	color:#fff !important;
+	width:200px;
+	height:35px;
+	border:none;
+	text-decoration:none;
+	display:inline-block;
+	font-size: 16px;
+	line-height: 32px;
+	text-align: center;
+	margin: 0 4px;
+}
+
+.newButton:hover{
+	background-position:left bottom;
+	text-decoration:none !important;
+	height:35px;
+}
+.greenButton{
+	background:url('../img/buttons.png') no-repeat right top;
+	text-shadow:1px 1px 1px #498917;
+}
+
+.blueButton:hover,
+.greenButton:hover{
+	background-position:left bottom;
+	text-decoration:none !important;
+}
+
+.greenButton:hover{
+	background-position:right bottom;
+}
+
+.blueButton:active,
+.greenButton:active{
+	position:relative;
+	bottom:-1px;
+}
+
+.hidden{
+	display:none;
+}
+

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="PageAccessControlMethod" value="dontUseAccessList" />
+	<infoitem key="MM_Form1" value="form_user" />
+	<infoitem key="MM_Form_Count" value="1" />
+	<infoitem key="MM_URL1" value="kategori" />
+	<infoitem key="MM_URL_Count" value="3" />
+	<infoitem key="MM_Session1" value="username" />
+	<infoitem key="MM_Session_Count" value="1" />
+	<infoitem key="MM_URL2" value="id" />
+	<infoitem key="MM_URL3" value="recordID" />
+</info>
