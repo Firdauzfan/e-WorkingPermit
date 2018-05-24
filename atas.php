@@ -1,6 +1,6 @@
 </head>
 <body >
-<table width="980" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
   <tr>
     <td><?php include("head.php"); ?></td>
   </tr>

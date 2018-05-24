@@ -1,6 +1,6 @@
 </head>
 <body onload="MM_preloadImages('img/t_backa.jpg')">
-<table width="980" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
   <tr>
     <td>
 	<table width="100%" cellpadding="0">

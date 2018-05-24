@@ -135,7 +135,7 @@ function MM_preloadImages() { //v3.0
 </script>
 </head>
 <body onload="MM_preloadImages('/img/t_logouta.JPG')">
-<table width="980" align="center" cellpadding="0" cellspacing="0">
+<table width="100%" align="center" cellpadding="0" cellspacing="0">
   <tr>
     <td><table width="100%" border="0" cellpadding="0">
       <tr>

@@ -138,7 +138,7 @@ body,td,th {
 </head>
 <body onload="MM_preloadImages('/img/t_input-usera.jpg','/img/t_userlista.jpg')">
 <form id="form1" name="form1" method="post" action="user_list.php">
-  <table width="980"  border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+  <table width="100%"  border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
     <tr>
       <td colspan="2" class="isi"><table width="100%" border="0" cellpadding="0">
         <tr>

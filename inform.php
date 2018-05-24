@@ -75,7 +75,7 @@ a:active {
 
 </head>
 <body onload="MM_preloadImages('../wp1/img/i_regwpa.jpg','../wp1/img/i_reglista.jpg','../wp1/img/i_wplista.jpg','../wp1/img/i_passworda.jpg','../wp1/img/i_myaccounta.jpg')">
-<table width="980" align="center" cellpadding="0" cellspacing="0">
+<table width="100%" align="center" cellpadding="0" cellspacing="0">
   <tr>
     <td><?php include("head.php"); ?></td>
   </tr>

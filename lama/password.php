@@ -106,7 +106,7 @@ body,td,th {
 <link href="SpryAssets/SpryValidationConfirm.css" rel="stylesheet" type="text/css" />
 </head>
 <body onload="MM_preloadImages('/img/t_input-usera.jpg','/img/edit_accounta.jpg')"><form action="<?php echo $editFormAction; ?>" method="POST" enctype="multipart/form-data" name="form1" id="form1">
-<table width="980"  border="0" align="center" cellpadding="3" cellspacing="0" bgcolor="#FFFFFF">
+<table width="100%"  border="0" align="center" cellpadding="3" cellspacing="0" bgcolor="#FFFFFF">
 <tr>
   <td colspan="2"><table width="100%" border="0" cellpadding="0">
     <tr>

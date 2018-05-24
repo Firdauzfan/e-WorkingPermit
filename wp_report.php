@@ -69,7 +69,7 @@ include('doctype.php');
 </head>
 <body>
 <form id="form1" name="form1" method="post" action="">
-  <table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
+  <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
     <tr>
       <td><?php include("head.php"); ?></td>
     </tr>

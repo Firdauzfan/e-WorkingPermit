@@ -124,7 +124,7 @@ a:active {
 </style>
 </head>
 <body onload="MM_preloadImages('/img/t_input-usera.jpg','/img/t_userlista.jpg')">
-<table width="980" align="center" cellpadding="0" cellspacing="0">
+<table width="100%" align="center" cellpadding="0" cellspacing="0">
   <tr>
     <td><?php include("head.php"); ?></td>
   </tr>

@@ -112,7 +112,7 @@ a {
 
 <body  onload="MM_preloadImages('img/t_home1.jpg','img/t_Workingpermit1.jpg','img/t_contact1.jpg','img/t_download1.jpg')">
 
-<table width="980"  border="0" align="center" cellpadding="3" cellspacing="0" bgcolor="#FFFFFF">
+<table width="100%"  border="0" align="center" cellpadding="3" cellspacing="0" bgcolor="#FFFFFF">
 <tr>
   <td><table width="100%" border="0">
     <tr>
@@ -126,7 +126,7 @@ a {
 
   <tr>
     <td><form action="<?php echo $editFormAction; ?>" id="form1" name="form1" method="POST">
-      <table width="980" border="0" align="center" cellpadding="0" cellspacing="1">
+      <table width="100%" border="0" align="center" cellpadding="0" cellspacing="1">
         <tr>
           <td colspan="13" align="left" valign="bottom" bgcolor="#CCCCCC"><table width="100%" border="0" cellspacing="0" cellpadding="3">
             <tr>

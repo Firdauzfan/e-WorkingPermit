@@ -76,7 +76,7 @@ a:active {
 
 </head>
 <body onload="MM_preloadImages('/img/t_input-usera.jpg','/img/t_userlista.jpg')">
-<table width="980" align="center" cellpadding="0" cellspacing="0">
+<table width="100%" align="center" cellpadding="0" cellspacing="0">
   <tr>
     <td><?php include("head.php"); ?></td>
   </tr>
@@ -98,7 +98,7 @@ a:active {
               <p class="in">Diberitahuan kepada Department In Charge mulai saat ini 
                 approve
                 working permit untuk Department In Charge dihilangkan, dan sebagai gantinya approve langsung diikut
-                sertakan setelah vendor anda melakukan pembuatan e-working permit di PT Graha Sumber Prima Elektronik. Dan untuk memastikan hal-hal yang bersangkutan mengenai vendor, anda dapat melihatnya pada menu WP LIST. 
+                sertakan setelah vendor anda melakukan pembuatan e-working permit di PT VIO Intelligence. Dan untuk memastikan hal-hal yang bersangkutan mengenai vendor, anda dapat melihatnya pada menu WP LIST. 
                 apabila vendor yang bersangkutan tidak sesuai
                 dengan yang anda harapkan anda bisa langsung menghubungi 
                 admin kami untuk menonaktifkan e-working permit yang bersangkutan.</p>

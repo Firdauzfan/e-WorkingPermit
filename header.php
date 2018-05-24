@@ -7,7 +7,7 @@ if(file_exists('img/header/'.$tempat.'.jpg')){
 echo 
 "<table width='100%' border='0' cellpadding='0' cellspacing='0'> 
 	<tr>
-    	<td><img src='img/header/$chead.jpg' width='976' /></td>
+    	<td><img src='img/header/$chead.jpg' width='100%' /></td>
   	</tr>
 </table>";
 ?>

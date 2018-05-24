@@ -125,7 +125,7 @@ function MM_swapImage() { //v3.0
 
 <body  onload="MM_preloadImages('img/t_home1.jpg','img/t_Workingpermit1.jpg','img/t_contact1.jpg','img/t_download1.jpg','img/t_backa.jpg')">
 
-<table width="980" align="center" cellpadding="0" cellspacing="0" >
+<table width="100%" align="center" cellpadding="0" cellspacing="0" >
    <tr>
   <td align="center"><table width="100%" cellpadding="0">
     <tr>
@@ -163,7 +163,7 @@ function MM_swapImage() { //v3.0
             <em class="eng">BUILDING</em></td>
           <td colspan="3" >:
             <label>
-              <input name="gedung" type="text" id="gedung" value="PT Graha Sumber Prima Elektronik" size="12" readonly="readonly" />
+              <input name="gedung" type="text" id="gedung" value="PT VIO Intelligence" size="12" readonly="readonly" />
             </label></td>
           <td width="132" colspan="-1" >&nbsp;</td>
           <td width="155" ><u class="grs">LANTAI</u><br />

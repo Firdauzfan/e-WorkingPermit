@@ -165,7 +165,7 @@ if (isset($_POST["no_reg"])) {
 if($_POST["cek"] == "no"){$appib ="No";}else{$appib = "-";}
 $insertSQL = sprintf("INSERT INTO $tb_wp (no_wp, gedung, lantai, status, kontraktor, nama_kontraktor, telp_kontraktor, jml_orang, jns_pekerjaan, tools, dept_incharge, nama_dept, no_id, telp_dept, tgl0, tgl1, tgl2, tgl3, tgl4, tgl5, tgl6, tgl7, tgl8, tgl_app_dt, nama_app_dt, no_id_dt, jam_mulai, jam_selesai, tgl_app_kt, approve_kt, approve_dt, approve_ib, approve_fm, approve_mt, approve_st, no_reg, poto, lokasi) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)",
                        GetSQLValueString($trek, "text"),
-                       GetSQLValueString('PT Graha Sumber Prima Elektronik', "text"),
+                       GetSQLValueString('PT VIO Intelligence', "text"),
                        GetSQLValueString($_POST['lantai'], "text"),
                        GetSQLValueString($_POST['status'], "text"),
                        GetSQLValueString($_POST['kontraktor'], "text"),
@@ -213,7 +213,7 @@ $insertSQL = sprintf("INSERT INTO $tb_wp (no_wp, gedung, lantai, status, kontrak
   $Result1 = mysql_query($updateSQL, $konek) or die(mysql_error());
   
   //sms/email working permit
-  $building			= "PT Graha Sumber Prima Elektronik";
+  $building			= "PT VIO Intelligence";
   $sms_judul		= "e-Working Permit $building";
   $sms_waktu		= gmdate('d M Y  H:i:s',time()+60*60*7);
   $sms_isi			= "Approve working permit ". strtoupper($_POST['kontraktor']);
