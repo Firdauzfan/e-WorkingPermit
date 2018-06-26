@@ -22,11 +22,12 @@ function MM_swapImage() { //v3.0
    if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
 }
 //-->
-</script><body onLoad="MM_preloadImages('img/t_download1.jpg','img/t_rega.JPG','img/t_createa.jpg','img/t_workinga.jpg','img/t_reg_reqa.jpg','img/t_Wp_lista.jpg')">
-<a href="index.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image6','','img/t_createa.jpg',1)"><img src="img/t_create.jpg" alt="Create Working Permit" name="Image6" width="79" height="40" border="0"></a>
-<a href="regkerja.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image8','','img/t_regist1a.JPG',1)"><img src="img/t_regist1.JPG" alt="Register Department In charge" name="Image8" width="93" height="40" border="0"></a>
-<a href="wp_daftar_kerja.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image7','','img/t_workinga.jpg',1)"><img src="img/t_working.JPG" alt="Vendor / Contractor Working Today" name="Image7" width="70" height="40" border="0"></a>
-<a href="wp_tampil.php" onMouseOver="MM_swapImage('Image3','','img/t_Wp_lista.jpg',1)" onMouseOut="MM_swapImgRestore()"><img src="img/t_wp_listi.jpg" alt="Working Permit List" name="Image3" width="56" height="40" border="0" id="Image3" /></a>
-<a href="reg_req.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image10','','img/t_reg_reqa.jpg',1)"><img src="img/t_reg_req.jpg" alt="Registration Request " name="Image10" width="92" height="40" border="0"></a>
-<a href="info.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','img/t_infoa.jpg',1)"><img src="img/t_info.jpg" alt="Information" name="Image5" width="41" height="40" border="0" id="Image5" /></a>
-<a href="login.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','img/t_logina.jpg',1)"><img src="img/t_login.jpg" alt="Login User" name="Image4" width="60" height="40" border="0" id="Image4" /></a>
+</script>
+<body onLoad="MM_preloadImages('img/t_download1.jpg','img/t_rega.JPG','img/t_createa.jpg','img/t_workinga.jpg','img/t_reg_reqa.jpg','img/t_Wp_lista.jpg')">
+<a href="index.php"><img src="img/t_create.jpg" alt="Create Working Permit" name="Image6" width="79" height="40" border="0"></a>
+<a href="regkerja.php"><img src="img/t_regist1.JPG" alt="Register Department In charge" name="Image8" width="93" height="40" border="0"></a>
+<a href="wp_daftar_kerja.php"><img src="img/t_working.JPG" alt="Vendor / Contractor Working Today" name="Image7" width="70" height="40" border="0"></a>
+<a href="wp_tampil.php"><img src="img/t_wp_listi.jpg" alt="Working Permit List" name="Image3" width="56" height="40" border="0" id="Image3" /></a>
+<a href="reg_req.php"><img src="img/t_reg_req.jpg" alt="Registration Request " name="Image10" width="92" height="40" border="0"></a>
+<a href="info.php"><img src="img/t_info.jpg" alt="Information" name="Image5" width="41" height="40" border="0" id="Image5" /></a>
+<a href="login.php"><img src="img/t_login.jpg" alt="Login User" name="Image4" width="60" height="40" border="0" id="Image4" /></a>

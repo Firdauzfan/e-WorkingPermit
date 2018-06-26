@@ -39,8 +39,8 @@ if ((isset($_POST["no_id"])) && ($_POST["no_id"] != "")){
 	
 	//Folder tujuan penyimpanan file	
 	$nama_poto	= $im_nama."_".$p_noid."_".$tglupload."_".$fileName;
-	$uploadfile	= "/poto/".$nama_poto;
-	$tempatfile = "../wp1/".$uploadfile;		
+	$uploadfile	= "poto/".$nama_poto;
+	$tempatfile = "$uploadfile";		
 	
 	//nama file yang disimpan di database
 	$photo 		= $uploadfile;

@@ -76,7 +76,7 @@ if (isset($_POST["no_id"])) {
 		//Folder tujuan penyimpanan file	
 		$nama_poto	= $nama_user."_".$tglupload."_".$fileName;
 		$uploadfile	= "poto/".$nama_poto;
-		$tempatfile = "../wp1/".$uploadfile;		
+		$tempatfile = "$uploadfile";		
 		
 		//nama file yang disimpan di database
 		$photo 		= $uploadfile;
