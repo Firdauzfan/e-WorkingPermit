@@ -16,21 +16,19 @@ if (isset($_GET["cari"])){
 	}else{
 		if($s_lokasi == 1){
 			$sql = "SELECT * FROM tb_user where (no_id like '%$cari%' or nama like '%$cari%' or telp like '%$cari%' or
-			bagian like '%$cari%' or status like '$cari%')  and bagian != 'Departement' and no_id != '12078212' and 
+			bagian like '%$cari%' or status like '$cari%')  and bagian != 'Departement' and no_id != '654321' and 
 			(status = 'Aktif' or status = 'Nonaktif') ORDER BY `nama` ASC ";
 		}else{
 			$sql = "SELECT * FROM tb_user where (no_id like '%$cari%' or nama like '%$cari%' or telp like '%$cari%' or
-			bagian like '%$cari%' or status like '$cari%')  and bagian != 'Departement' and no_id != '12078212' and 
+			bagian like '%$cari%' or status like '$cari%')  and bagian != 'Departement' and no_id != '654321' and 
 			(status = 'Aktif' or status = 'Nonaktif') and lokasi = '$s_lokasi' ORDER BY `nama` ASC ";
 		}
 	}
 }else{	
 	if($s_lokasi == 1){
-		$sql 	= "SELECT * FROM tb_user where bagian != 'Departement' and no_id != '12078212' and 
-		(status = 'Aktif' or status = 'Nonaktif') ORDER BY `lokasi` ASC";	
+		$sql 	= "SELECT * FROM tb_user where no_id != '654321' and bagian != 'Departement' and (status = 'Aktif' or status = 'Nonaktif') ORDER BY `lokasi` ASC";	
 	}else{
-		$sql 	= "SELECT * FROM tb_user where bagian != 'Departement' and no_id != '12078212' and 
-		(status = 'Aktif' or status = 'Nonaktif') and lokasi = '$s_lokasi' ORDER BY `nama` ASC";
+		$sql 	= "SELECT * FROM tb_user where no_id != '654321' and bagian != 'Departement' and (status = 'Aktif' or status = 'Nonaktif') and lokasi = '$s_lokasi' ORDER BY `nama` ASC";
 	}	
 }
 include('page.php');

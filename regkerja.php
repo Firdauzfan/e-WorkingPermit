@@ -69,15 +69,18 @@ $pesan = "";
 			 $Result1 = mysql_query($sql, $konek) or die(mysql_error());
 			 if($Result1){
 				 $pesan 		= "Register Berhasil, account anda sedang menunggu konfirmasi dari admin";
+
 				 //sms working permit	
 				 $cNama			= strtoupper($p_nama);
 				 $sms_judul		= "e-WP $building";  
 				 $sms_waktu		= gmdate('d M Y  H:i:s',time()+60*60*7);
-				 $sms_isi		= "$cNama ($p_telp) has been registered with No ID $p_no_id, please check this user";				
+				 $sms_isi		= "$cNama ($p_email) has been registered with No ID $p_no_id, please check this user";				
 				 $sms_pesan 	= "$sms_judul. $sms_waktu WIB. $sms_isi.";
 				 //sms ke Admin
-				 include('sms_admin.php');
-				 include('sms2.php'); 
+				 // include('sms_admin.php');
+				 // include('sms2.php'); 
+
+         include('sendmailregker.php');
 				 
 				 $p_no_id 		= "";
 				 $p_nama 		= "";
@@ -88,6 +91,10 @@ $pesan = "";
 				 $p_title 		= "";
 				 $p_bagian 		= "";
 				 $p_password1	= "";				 
+
+         echo "<script>alert('Register Berhasil, account anda sedang menunggu konfirmasi dari admin')</script>";
+
+         echo '<script language="javascript">document.location="login.php";</script>';
 			 }else{
 				 $pesan = "Data Gagal disimpan";
 			 }

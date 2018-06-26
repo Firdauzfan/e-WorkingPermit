@@ -11,9 +11,9 @@ if (!isset( $s_userid)){
 	header('Location: '.'login.php');
 }
 
-if ($s_bagian != "Departement" && $s_userid != "12078212"){
+if ($s_bagian != "Departement" && $s_userid != "654321"){
 	if ($s_lokasi != $tempat){
-		header('location: '.'http://10.22.206.58');
+		header('location: '.'http://localhost/e-WorkingPermit');
 	}
 }
 ?>

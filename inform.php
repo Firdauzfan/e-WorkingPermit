@@ -74,7 +74,7 @@ a:active {
   ?>
 
 </head>
-<body onload="MM_preloadImages('../wp1/img/i_regwpa.jpg','../wp1/img/i_reglista.jpg','../wp1/img/i_wplista.jpg','../wp1/img/i_passworda.jpg','../wp1/img/i_myaccounta.jpg')">
+<body onload="MM_preloadImages('../e-WorkingPermit/img/i_regwpa.jpg','../e-WorkingPermit/img/i_reglista.jpg','../e-WorkingPermit/img/i_wplista.jpg','../e-WorkingPermit/img/i_passworda.jpg','../e-WorkingPermit/img/i_myaccounta.jpg')">
 <table width="100%" align="center" cellpadding="0" cellspacing="0">
   <tr>
     <td><?php include("head.php"); ?></td>
@@ -92,7 +92,7 @@ a:active {
       <tr>
         <td><table width="100%" border="0" cellspacing="0" cellpadding="5">
           <tr>
-           <td width="22%" valign="top"><img src="../wp1/img/LogoX.png" width="210" height="199" /></td>
+           <td width="22%" valign="top"><img src="../e-WorkingPermit/img/LogoX.png" width="210" height="199" /></td>
             <td width="78%" bordercolor="#666666" ><table border="0" cellspacing="0" cellpadding="5" class="">
                <tr>
                  <td>SELAMAT DATANG DI MENU E-WORKING PERMIT UNTUK DEPARTMENT IN CHARGE <br />
@@ -102,29 +102,29 @@ a:active {
   <tr>
 
                      <td valign="middle">1.</td>
-                     <td><a href="regkerjaibfm.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image20','','../wp1/img/i_regwpa.jpg',1)"><img src="../wp1/img/i_regwp.jpg" name="Image20" width="98" height="40" border="0" id="Image20" /></a></td>
+                     <td><a href="regkerjaibfm.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image20','','../e-WorkingPermit/img/i_regwpa.jpg',1)"><img src="../e-WorkingPermit/img/i_regwp.jpg" name="Image20" width="98" height="40" border="0" id="Image20" /></a></td>
                      <td valign="top"><span class="infoisi">Digunakan untuk meregistrasikan vendor anda untuk bekerja. Registrasi
                       dilakukan setiap kali vendor anda ingin mengajukan working permit</span>.</td>
                    </tr>
                    <tr>
                      <td valign="middle">2.</td>
-                     <td><a href="reg_list_di.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image21','','../wp1/img/i_reglista.jpg',1)"><img src="../wp1/img/i_reglist.jpg" name="Image21" width="98" height="40" border="0" id="Image21" /></a></td>
+                     <td><a href="reg_list_di.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image21','','../e-WorkingPermit/img/i_reglista.jpg',1)"><img src="../e-WorkingPermit/img/i_reglist.jpg" name="Image21" width="98" height="40" border="0" id="Image21" /></a></td>
                      <td valign="top" class="infoisi">Menampilkan data registrasi yang pernah anda buat dan menampilkan nomor
                       registrasi yang harus anda serahkan kepada vendor anda untuk pembuatan working permit. </td>
                    </tr>
                    <tr>
                      <td valign="middle">3.</td>
-                     <td><a href="wp_list_di.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image22','','../wp1/img/i_wplista.jpg',1)"><img src="../wp1/img/i_wplist.jpg" name="Image22" width="98" height="40" border="0" id="Image22" /></a></td>
+                     <td><a href="wp_list_di.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image22','','../e-WorkingPermit/img/i_wplista.jpg',1)"><img src="../e-WorkingPermit/img/i_wplist.jpg" name="Image22" width="98" height="40" border="0" id="Image22" /></a></td>
                      <td valign="top" class="infoisi">Menampilkan data working permit yang telah vendor anda buat.</td>
                    </tr>
                    <tr>
                      <td valign="middle">4.</td>
-                     <td><a href="password.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image23','','../wp1/img/i_passworda.jpg',1)"><img src="../wp1/img/i_password.jpg" name="Image23" width="98" height="40" border="0" id="Image23" /></a></td>
+                     <td><a href="password.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image23','','../e-WorkingPermit/img/i_passworda.jpg',1)"><img src="../e-WorkingPermit/img/i_password.jpg" name="Image23" width="98" height="40" border="0" id="Image23" /></a></td>
                      <td valign="top" class="infoisi">Digunakan untuk mengganti password </td>
                    </tr>
                    <tr>
                      <td valign="middle">5.</td>
-                     <td><a href="user_edit.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image24','','../wp1/img/i_myaccounta.jpg',1)"><img src="../wp1/img/i_myaccount.jpg" name="Image24" width="98" height="40" border="0" id="Image24" /></a></td>
+                     <td><a href="user_edit.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image24','','../e-WorkingPermit/img/i_myaccounta.jpg',1)"><img src="../e-WorkingPermit/img/i_myaccount.jpg" name="Image24" width="98" height="40" border="0" id="Image24" /></a></td>
                      <td valign="top" class="infoisi">Digunakan untuk mengubah data diri, seperti Department,
                       Email, Phone, Title dan Photo</td>
                    </tr>

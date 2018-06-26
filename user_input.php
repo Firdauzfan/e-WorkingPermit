@@ -75,6 +75,20 @@ $pesan = "";
 			 
 			 $Result1 = mysql_query($sql, $konek) or die(mysql_error());
 			 if($Result1){
+
+         $cNama      = strtoupper($p_nama);
+         $sms_judul   = "e-WP $building";  
+         $sms_waktu   = gmdate('d M Y  H:i:s',time()+60*60*7);
+         $sms_isi   = "$cNama ($p_email) has been registered with No ID $p_no_id, silahkan login untuk request e-working permit di http://35.202.49.101/e-WorkingPermit/login.php";        
+         $sms_pesan   = "$sms_judul. $sms_waktu WIB. $sms_isi.";
+         //sms ke Admin
+         // include('sms_admin.php');
+         // include('sms2.php'); 
+
+         include('sendmailreguser.php');
+
+         echo "<script>alert('Account Berhasil Dibuat')</script>";
+
 				 $pesan 		= "Data Berhasil disimpan";
 				 $p_no_id 		= "";
 				 $p_nama 		= "";

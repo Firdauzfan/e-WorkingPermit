@@ -44,7 +44,7 @@ if($lokasi == 1){
 	   $bagian  = "Departement"	;
    }
   
-  if($bagian == "Departement" or $userid == "12078212"){
+  if($bagian == "Departement" or $userid == "654321"){
 	$lokasi 	= "$tempat";	
   }       
   if (!$result){

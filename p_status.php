@@ -22,13 +22,14 @@ if ($s_bagian != 'Admin'){ header('Location: '.'login.php');}
 					$sql2 = "UPDATE tb_user SET status = 'Aktif', app_by = '$s_userid', app_time = '$time', app_from = '$ip_komp' WHERE no_id = '$no_id'";
 					$Result1 = mysql_query($sql2, $konek) or die(mysql_error()); 	
 					//sms working permit						
-					$sms_isi		= "Account anda telah diaktifkan silahkan login untuk request e-working permit di http://10.24.131.61/";
-					$sms_footer		= "Approve by ".$_SESSION['nama'];
+					$sms_isi		= "Account anda telah diaktifkan silahkan login untuk request e-working permit di http://35.202.49.101/e-WorkingPermit/login.php";
+					$sms_footer		= "Approved by ".$_SESSION['nama'];
 					$sms_pesan 		= "$sms_judul. $sms_waktu WIB. $sms_isi. $sms_footer.";					
 					//sms ke user
 					$sms_no_id	= $no_id;
-					include('sms_no_id.php');
-					include('sms2.php');				
+					// include('sms_no_id.php');
+					// include('sms2.php');
+					include('sendmailstatus.php');
 			  }elseif ($status == 'Aktif') { 
 				if ($no_id != $s_userid){
 					$sql2 = "UPDATE tb_user SET `status` = 'Nonaktif' WHERE no_id = '$no_id'";
@@ -39,8 +40,9 @@ if ($s_bagian != 'Admin'){ header('Location: '.'login.php');}
 					$sms_pesan 		= "$sms_judul. $sms_waktu WIB. $sms_isi $sms_footer.";					
 					//sms ke user
 					$sms_no_id	= $no_id;
-					include('sms_tes.php');
-					include('sms2.php');
+					// include('sms_tes.php');
+					// include('sms2.php');
+					include('sendmailstatus.php');
 					}
 			  }else{	  
 					$sql2 = "UPDATE tb_user SET `status` = 'Aktif' WHERE no_id = '$no_id'";
@@ -51,8 +53,9 @@ if ($s_bagian != 'Admin'){ header('Location: '.'login.php');}
 					$sms_pesan 		= "$sms_judul. $sms_waktu WIB. $sms_isi $sms_footer.";					
 					//sms ke user
 					$sms_no_id	= $no_id;
-					include('sms_no_id.php');
-					include('sms2.php');
+					// include('sms_no_id.php');
+					// include('sms2.php');
+					include('sendmailstatus.php');
 			  }					
 			}			
 	header("Location: " . $link );	
