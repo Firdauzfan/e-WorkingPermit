@@ -1,5 +1,5 @@
 <?php
-define('UPLOAD_DIR', 'http://35.202.49.101/e-WorkingPermit/vendor/');
+define('UPLOAD_DIR', 'vendor/');
 $img = $_POST['base64image'];
 $img = str_replace('data:image/jpeg;base64,', '', $img);
 $img = str_replace(' ', '+', $img);
