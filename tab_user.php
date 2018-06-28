@@ -24,7 +24,7 @@ function MM_swapImage() { //v3.0
 //-->
 </script>
 <body onLoad="MM_preloadImages('img/t_wp_lista.jpg','img/edit_accounta.jpg','img/t_logouta.JPG','img/t_changepassworda.jpg')">
-<a href="wp_list_app.php"><img src="img/t_wp_app.jpg" alt="Working Permit Approve" name="Image6" width="88" height="40" border="0" id="Image6" /></a>
+<a href="wp_list_app.php"><img src="img/t_wp_app.JPG" alt="Working Permit Approve" name="Image6" width="88" height="40" border="0" id="Image6" /></a>
 <a href="password.php"><img src="img/t_changepassword.JPG" alt="Change Password" name="Image7" width="75" height="40" border="0"></a>
 <a href="user_edit.php"><img src="img/t_myaccount.JPG" alt="Edit Account" name="Image4" width="91" height="40" border="0" id="Image4" /></a>
 <a href="login.php"><img src="img/t_logout.jpg" alt="Logout" name="Image5" width="60" height="40" border="0" id="Image5" /></a>
