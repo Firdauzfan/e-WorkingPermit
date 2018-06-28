@@ -101,7 +101,7 @@ if (isset($_POST["no_reg"]) && $_POST["no_reg"] != '') {
 	$im_nama 	= implode("", $ex_nama);	
 	
   // include('uploadjpg.php');
-	$uploadfile = "vendor/".$unikName.".jpg";
+	$uploadfile = $uploadDir.$unikName.".jpg";
 	$photo 		= $uploadfile;	
 	// $addfile 	= "../wp1/".$fileup;
 		
