@@ -295,15 +295,13 @@ document.getElementById("img").src = document.getElementById("upload").value;
               }
 
               function SaveSnap(){
+                  var base64image = document.getElementById("base64image").src;
                   // document.getElementById("loading").innerHTML="Saving, please wait...";
-                  var file =  document.getElementById("base64image").src;
-                  var formdata = new FormData();
-                  formdata.append("base64image", file);
-                  var ajax = new XMLHttpRequest();
-                  // ajax.addEventListener("load", function(event) { uploadcomplete(event);}, false);
-                  ajax.open("POST", "uploadjpg.php");
-                  ajax.send(formdata);
-              }
+                  Webcam.upload( base64image, 'uploadjpg.php', function(code, text) {
+                  console.log('Save successfully');
+                  //console.log(text);
+                 });
+                  }
             </script>
         </span>
           </td>

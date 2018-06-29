@@ -47,7 +47,7 @@ if ((isset($_POST["no_id"])) && ($_POST["no_id"] != "")){
 	$typefile 	= substr($fileType,0,5);
 	
 	$upload = move_uploaded_file($tmpName, $tempatfile);
-	if (!$upload){
+  
 		$pesan = " Upload file gagal";
 	}elseif($fileSize > 200000){
 		 $pesan = "Ukuran file Photo maksimal 200 kb";
