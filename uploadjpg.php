@@ -1,5 +1,5 @@
 <?php
-define('UPLOAD_DIR', 'poto/');
+define('UPLOAD_DIR', 'vendor/');
 $img = $_POST['base64image'];
 $img = str_replace('data:image/jpeg;base64,', '', $img);
 $img = str_replace(' ', '+', $img);
