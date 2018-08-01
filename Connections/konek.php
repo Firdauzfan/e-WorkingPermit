@@ -4,7 +4,7 @@
 # HTTP="true"
 $hostname 	= "localhost";
 $username 	= "root";
-$password 	= "root";
+$password 	= "";
 $database 	= "wp_db";
 $tempat		= 1; 
 $tb_wp		= "tb_wp$tempat"; //disesuaikan dengan tabel wp

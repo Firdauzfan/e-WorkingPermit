@@ -49,7 +49,7 @@ if ((isset($_POST["no_id"])) && ($_POST["no_id"] != "")){
 	$upload = move_uploaded_file($tmpName, $tempatfile);
   
 		$pesan = " Upload file gagal";
-	}elseif($fileSize > 200000){
+	}if($fileSize > 200000){
 		 $pesan = "Ukuran file Photo maksimal 200 kb";
 	}else{
 		$updateSQL = "UPDATE tb_user SET  email='$p_email', telp='$p_telp', ext='$p_ext', title='$p_title', departement='$p_dept',
@@ -58,7 +58,7 @@ if ((isset($_POST["no_id"])) && ($_POST["no_id"] != "")){
 		$pesan = "Data berhasil disimpan";
 	}
  }
-}	
+	
 
 $sql1 ="select value from tb_config where path='path'";
 $r = mysql_query($sql1);

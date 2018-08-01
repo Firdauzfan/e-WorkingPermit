@@ -318,8 +318,7 @@ include('fancy.php');
                             <li>Tanggal kerja hanya dapat dipilih maksimal 7  hari kerja,</li>
                             <li>Untuk penginputan foto anda klik "Take Picture" pada form inputan working permit lalu hasil dari capture foto akan muncul pada kolom sebelah kanan, dan bila ingin mengulang mengambil gambar kembali bisa dilakukan dengan mengklik "Take Picture" sekali lagi</li>
                           </ul>
-                          <p><center><img width="576" height="432" src="img/clip_image006_0003.jpg" alt="11523095936untitled.bmp" /></center><br />
-                            Gambar 3. Fungsi untuk photo working permit<br />
+                          <br />
                             Cara penggunaan Program Photo ialah  sebagai berikut; </p>
                           <ul>
                             <li>Take Picture</li>
