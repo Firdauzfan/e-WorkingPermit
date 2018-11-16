@@ -1,6 +1,6 @@
 # e-WorkingPermit
 
-##Install DCIM:
+## Install DCIM:
 1. Buka terminal.
 2. command sudo apt-get install lamp-server^
 3. ketik password dan Enter.
@@ -18,14 +18,14 @@ sudo chmod 777 pictures/
 sudo chmod 777 vendor/mpdf/mpdf/ttfontdata/
 11. lalu sudo cp db.inc.php-dist db.inc.php
 
-##Install Database DCIM:
+## Install Database DCIM:
 1. mysql -u root -p
 2. create database dcim;
 grant all on dcim.* to 'dcim'@'localhost' identified by 'dcim';
 flush privileges;
 exit;
 
-##Configure Apache2:
+## Configure Apache2:
 1. cd /etc/apache2/sites-available
 2. sudo nano default-ssl.conf
 3. Lalu tambahkan/ubah
@@ -40,7 +40,7 @@ exit;
     Require all granted
     </Directory>
 
-##Membuat User Access:
+## Membuat User Access:
 1. sudo nano /var/www/dcim/.htaccess
 2. Lalu tambahkan
 AuthType Basic
@@ -49,13 +49,13 @@ AuthUserFile /var/www/opendcim.password
 Require valid-user
 3. Save dan lakukan command sudo htpasswd -cb /var/www/opendcim.password dcim dcim
 
-##Enable Apache dan Site
+## Enable Apache dan Site
 sudo a2enmod ssl
 sudo a2enmod rewrite
 sudo a2ensite default-ssl
 sudo service apache2 restart
 
-##Import Database DCIM
+## Import Database DCIM
 1. buka phpmyadmin atau database manager
 2. buat database dengan nama dcim
 3 buka pada file /var/www/dcim/
