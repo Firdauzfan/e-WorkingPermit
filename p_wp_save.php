@@ -1,8 +1,8 @@
 <?php
-require_once('Connections/konek.php'); 
+require_once('Connections/konek.php');
 
 if (!function_exists("GetSQLValueString")) {
-function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
+function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "")
 {
   if (PHP_VERSION < 6) {
     $theValue = get_magic_quotes_gpc() ? stripslashes($theValue) : $theValue;
@@ -12,7 +12,7 @@ function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDe
   switch ($theType) {
     case "text":
       $theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
-      break;    
+      break;
     case "long":
     case "int":
       $theValue = ($theValue != "") ? intval($theValue) : "NULL";
@@ -38,7 +38,7 @@ if (isset($_SERVER['QUERY_STRING'])) {
 if (isset($_POST["no_reg"])) {
 	$no_reg =$_POST['no_reg'];
 	$no_reg2 =$_POST['no_reg2'];
-	$no_id = $_POST['no_id'];	
+	$no_id = $_POST['no_id'];
 	$lantai =$_POST['lantai'];
 	$status =$_POST['status'];
 	$kontraktor =$_POST['kontraktor'];
@@ -55,43 +55,43 @@ if (isset($_POST["no_reg"])) {
 	$tgl6 =$_POST['tgl6'];
 	$tgl7 =$_POST['tgl7'];
 	$tgl8 =$_POST['tgl8'];
-	
-	if  (!empty($tgl1)){			  
+
+	if  (!empty($tgl1)){
 			 $mulai = $tgl1;}
 		  	else{
-		  if  (!empty($tgl2)){			  
+		  if  (!empty($tgl2)){
 			 $mulai = $tgl2;}
 		  	else{
-		  if  (!empty($tgl3)){			  
+		  if  (!empty($tgl3)){
 			 $mulai = $tgl3;}
 		  	else{
-		  if  (!empty($tgl4)){			  
+		  if  (!empty($tgl4)){
 			 $mulai = $tgl4;}
 		  	else{
-		  if  (!empty($tgl5)){			  
+		  if  (!empty($tgl5)){
 			 $mulai = $tgl5;}
 		  	else{
-		  if  (!empty($tgl6)){			  
+		  if  (!empty($tgl6)){
 			 $mulai = $tgl6;}
 		  	else{
-		  if  (!empty($tgl7)){			  
+		  if  (!empty($tgl7)){
 			 $mulai = $tgl7;}
 			 else{
-		  if  (!empty($tgl8)){			  
+		  if  (!empty($tgl8)){
 			 $mulai = $tgl8;}
 			 }}}}}}}
-	
+
 	$jam_mulai = $_POST['jam_mulai'];
 	$menit_mulai = $_POST['menit_mulai'];
 	$jam_selesai = $_POST['jam_selesai'];
 	$menit_selesai = $_POST['menit_selesai'];
 	$jamm= $jam_mulai.':'.$menit_mulai.':'.'00';
 	$jams= $jam_selesai.':'.$menit_selesai.':'.'00';
-	
+
 	if ($jam_selesai == '00') {$jam_palid = '24';} else {$jam_palid = $jam_selesai;}
 
 //upload Photo
-$fileName = $_FILES['upload']['name'];  
+$fileName = $_FILES['upload']['name'];
 $fileSize = $_FILES['upload']['size'];
 $tmpName  = $_FILES['upload']['tmp_name'];
 $fileType = $_FILES['upload']['type'];
@@ -118,38 +118,38 @@ $addfile = "../wp1/".$uploadfile;
 
 if ( $fileSize == 0)
  	{die ("Silakan Masukan Photo dengan cara klik browse   <a href='javascript:history.back(1)'>Back</a>");}
-if ($typefile != 'image') 
-	{die ("File yang anda masukan salah <a href='javascript:history.back(1)'>Back</a>");} 
-	
+if ($typefile != 'image')
+	{die ("File yang anda masukan salah <a href='javascript:history.back(1)'>Back</a>");}
+
 $IPaddr=getenv(REMOTE_ADDR);
 if ($IPaddr != '10.21.100.111'){die("Invalid location  <a href='javascript:history.back(1)'>Back</a>");}
-	
+
 
 if($tgl1=='' and $tgl2=='' and $tgl3=='' and $tgl4=='' and $tgl5=='' and $tgl6=='' and $tgl7=='' and $tgl8=='')
 	{die("Tanggal harus diisi  <a href='javascript:history.back(1)'>Back</a>");}
-	
+
 	if($tgl1 !='' and $tgl2 !='' and $tgl3 !='' and $tgl4 !='' and $tgl5 !='' and $tgl6 !='' and $tgl7 !='' and $tgl8 !='')
 	{die("Maksimal 7 hari  <a href='javascript:history.back(1)'>Back</a>");}
-	
+
 if($jam_mulai=='hour' or $jam_selesai=='hour' or $menit_mulai=='min' or $menit_selesai=='min')
 	{die("Jam harus diisi  <a href='javascript:history.back(1)'>Back</a>");}
-	
+
 if($tgl1 !='' and $tgl2=='' and $tgl3=='' and $tgl4=='' and $tgl5=='' and $tgl6=='' and $tgl7=='' and $tgl8=='' and ($jam_mulai > $jam_palid or $jam_mulai == $jam_selesai))
 	{die("Jam yang anda pilih salah  <a href='javascript:history.back(1)'>Back</a>");}
-	
+
 $query_user = "SELECT * FROM  tb_user where no_id = $no_id";
 $user_cari = mysql_query($query_user, $konek) or die(mysql_error());
 $hasil_user = mysql_fetch_assoc($user_cari);
 if ($hasil_user){
 	$nama = $hasil_user['nama'];
 	$departement = $hasil_user['departement'];
-	$telp = $hasil_user['telp'];	
+	$telp = $hasil_user['telp'];
 }
 if ($status == ''){die("Status kerja harus diisi <a href='javascript:history.back(1)'>Back</a>");}
 
 if ($no_reg != $no_reg2){die("Nomer registrasi anda salah, silakan hubungi <br>
 							 Department in charge (Orang yang memerintahkan anda untuk berkerja)
-							 <a href='javascript:history.back(1)'>Back</a>");}                      
+							 <a href='javascript:history.back(1)'>Back</a>");}
 
 
 //nomor urut
@@ -158,10 +158,10 @@ $rec_wp_input = mysql_query($query_rec_wp_input, $konek) or die(mysql_error());
 $row_rec_wp_input = mysql_fetch_assoc($rec_wp_input);
 $totalRows_rec_wp_input = mysql_num_rows($rec_wp_input);
 $jml = $row_rec_wp_input['num']+1;
-$trek = str_repeat('0',5 - strlen($jml)).$jml; 
+$trek = str_repeat('0',5 - strlen($jml)).$jml;
 
 
-if (isset($_POST["no_reg"])) {	
+if (isset($_POST["no_reg"])) {
 if($_POST["cek"] == "no"){$appib ="No";}else{$appib = "-";}
 $insertSQL = sprintf("INSERT INTO $tb_wp (no_wp, gedung, lantai, status, kontraktor, nama_kontraktor, telp_kontraktor, jml_orang, jns_pekerjaan, tools, dept_incharge, nama_dept, no_id, telp_dept, tgl0, tgl1, tgl2, tgl3, tgl4, tgl5, tgl6, tgl7, tgl8, tgl_app_dt, nama_app_dt, no_id_dt, jam_mulai, jam_selesai, tgl_app_kt, approve_kt, approve_dt, approve_ib, approve_fm, approve_mt, approve_st, no_reg, poto, lokasi) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)",
                        GetSQLValueString($trek, "text"),
@@ -185,9 +185,9 @@ $insertSQL = sprintf("INSERT INTO $tb_wp (no_wp, gedung, lantai, status, kontrak
                        GetSQLValueString($_POST['tgl4'], "date"),
                        GetSQLValueString($_POST['tgl5'], "date"),
                        GetSQLValueString($_POST['tgl6'], "date"),
-                       GetSQLValueString($_POST['tgl7'], "date"), 
-					   GetSQLValueString($_POST['tgl8'], "date"),  
-					   GetSQLValueString($_POST['tgl_reg'], "date"), 
+                       GetSQLValueString($_POST['tgl7'], "date"),
+					   GetSQLValueString($_POST['tgl8'], "date"),
+					   GetSQLValueString($_POST['tgl_reg'], "date"),
 					   GetSQLValueString($nama , "text"),
 					   GetSQLValueString($_POST['no_id'], "text"),
                        GetSQLValueString($jamm, "date"),
@@ -207,11 +207,11 @@ $insertSQL = sprintf("INSERT INTO $tb_wp (no_wp, gedung, lantai, status, kontrak
   $upload = move_uploaded_file($tmpName, $addfile);
   //----------------------------------------------------
   if (!$upload) {die (" File gagal diupload");}
-  $Result1 = mysql_query($insertSQL, $konek) or die(mysql_error()); 
-  
+  $Result1 = mysql_query($insertSQL, $konek) or die(mysql_error());
+
   $updateSQL = "UPDATE $tb_reg SET status = 'used' WHERE no_reg = $no_reg";
   $Result1 = mysql_query($updateSQL, $konek) or die(mysql_error());
-  
+
   //sms/email working permit
   $building			= "PT VIO Intelligence";
   $sms_judul		= "e-Working Permit $building";
@@ -224,11 +224,11 @@ $insertSQL = sprintf("INSERT INTO $tb_wp (no_wp, gedung, lantai, status, kontrak
   // $hp_maintenance	= "";
   // $hp_security		= "0817103390;087889956999;02198960250";
   // $hp_tambahan		= "087781991347";
-  // $sms_penerima		= "$hp_tambahan;$hp_inbuilding;$hp_fm;$hp_maintenance;$hp_security"; 
-  // include('sms.php'); 
+  // $sms_penerima		= "$hp_tambahan;$hp_inbuilding;$hp_fm;$hp_maintenance;$hp_security";
+  // include('sms.php');
 
   include('sendmailwp.php');
-  
+
   $insertGoTo = "wp_tampil.php";
   if (isset($_SERVER['QUERY_STRING'])) {
     $insertGoTo .= (strpos($insertGoTo, '?')) ? "&" : "?";

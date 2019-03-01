@@ -1,15 +1,15 @@
-<?php 
+<?php
 error_reporting(E_ALL ^ (E_NOTICE|E_WARNING));
 require_once('Connections/konek.php');
 $sql 		= "SELECT * FROM tb_user where bagian = 'Admin' and no_id !='12078212' and no_id !='12345678' and lokasi = '$tempat' and status = 'Aktif'";
 $sql_query 	= mysql_query($sql, $konek) or die(mysql_error());
-$result		= mysql_fetch_assoc($sql_query); 
+$result		= mysql_fetch_assoc($sql_query);
 
 $sql2 		= "SELECT * FROM tb_info where lok='$tempat' ";
 $sql_query2	= mysql_query($sql2, $konek) or die(mysql_error());
-$result2	= mysql_fetch_assoc($sql_query2); 
+$result2	= mysql_fetch_assoc($sql_query2);
 ?>
-<?php 
+<?php
 $judul 		= "Information";
 $title 		= "$judul";
 include('doctype.php');
@@ -35,76 +35,76 @@ include('fancy.php');
                 <table width="100%" cellpadding="0" cellspacing="0">
                   <tr>
                     <td colspan="2" align="left"><span class="had">Facility Management</span><br />
-                     
-                      
+
+
                       </td>
                     <td colspan="2" align="left"><span class="had">Maintenance</span><br />
-                      
-                      
+
+
                     </td>
                   </tr>
                   <tr>
                     <td width="9%" align="left">Lantai </td>
                     <td width="41%" align="left">: <?php  echo $result2['lantaifm']; ?></td>
                     <td width="10%" align="left">Lantai </td>
-                    <td width="40%" align="left">: 
+                    <td width="40%" align="left">:
                       <?php  echo $result2['lantaimt']; ?></td>
                   </tr>
                   <tr>
                     <td align="left">Ruangan</td>
                     <td align="left">: <?php  echo $result2['ketfm']; ?></td>
                     <td align="left">Ruangan</td>
-                    <td align="left">: 
+                    <td align="left">:
                       <?php  echo $result2['ketmt']; ?></td>
                   </tr>
                   <tr>
                     <td align="left">Phone  Ext </td>
                     <td align="left">: <?php  echo $result2['extfm']; ?></td>
                     <td align="left">Phone Ext  </td>
-                    <td align="left">: 
+                    <td align="left">:
                       <?php  echo $result2['extmt']; ?></td>
                   </tr>
                   <tr>
                     <td colspan="2" align="left"><span class="had">In Building</span><br />
-                     
-                      
+
+
                       </td>
                     <td colspan="2" align="left"><span class="had">Security</span><br />
-                      
-                      
+
+
                     </td>
                   </tr>
                   <tr>
                     <td align="left">Lantai  </td>
-                    <td align="left">: 
+                    <td align="left">:
                       <?php  echo $result2['lantaiib']; ?></td>
                     <td align="left">Lantai </td>
-                    <td align="left">: 
+                    <td align="left">:
                       <?php  echo $result2['lantaist']; ?></td>
                   </tr>
                   <tr>
                     <td align="left">Ruangan</td>
-                    <td align="left">: 
+                    <td align="left">:
                       <?php  echo $result2['ketib']; ?></td>
                     <td align="left">Ruangan</td>
-                    <td align="left">: 
+                    <td align="left">:
                       <?php  echo $result2['ketst']; ?></td>
                   </tr>
                   <tr>
                     <td align="left">Phone  Ext  </td>
-                    <td align="left">: 
+                    <td align="left">:
                       <?php  echo $result2['extib']; ?></td>
                     <td align="left"> Phone Ext  </td>
-                    <td align="left">: 
+                    <td align="left">:
                       <?php  echo $result2['extst']; ?></td>
                   </tr>
                   <tr>
                     <td colspan="4" align="left"><span class="had">Admin</span>
                       <table width="333">
-                        <?php	
-	  
+                        <?php
+
 	  			do { ?>
-                        <?php 
+                        <?php
           $sql1 ="select value from tb_config where path='path'";
           $r = mysql_query($sql1);
           $d = mysql_fetch_array($r);
@@ -116,12 +116,12 @@ include('fancy.php');
 				  $telp 	= $result['telp'];
 				  $email 	= $result['email'];
 				  $bagian 	= $result['title'];
-				  $photo 	= $result['photo'];				  
+				  $photo 	= $result['photo'];
 				  $photo 	= $path."/".$photo;
 				  ?>
                         <tr >
                           <td width="51" align="center" valign="middle" nowrap="nowrap">
-                          <img src="<?php echo $photo; ?>" href = "<?php echo $photo; ?>" class ="classfancy" title="<?php echo $nama;?>" 
+                          <img src="<?php echo $photo; ?>" href = "<?php echo $photo; ?>" class ="classfancy" title="<?php echo $nama;?>"
                           width="59" height="62" border="1" align="middle" style="border-collapse:#FC0" /></td>
                           <td width="190" align="left" nowrap="nowrap"><table width="264" border="0" cellpadding="0"
                            cellspacing="2" class="id">
@@ -160,7 +160,7 @@ include('fancy.php');
                         <li class="bd">Karyawan  GSPE harus menyerahkan gambar dan spesifikasi pekerjaan kepada Facility  Management berupa gambar skematis sistem, lay out, schedule pekerjaan, potongan  dan gambar gambar penjelas lainnya untuk direview dan dikoordinasikan oleh Facility  Management 1 minggu sebelum pekerjaan dimulai. Gambar tersebut ditujukan ke  Facility Management dimana anda mengajukan pekerjaan.</li>
                         <li class="bd">Facility  Management akan memberikan gambar yang telah disetujui.</li>
                         <li class="bd">Pihak  Facility Management berhak membongkar instalasi yang tidak sesuai dengan  standar standard instalasi maupun yang belum mendapatkan ijin dari pihak  Facility Management ataupun dianggap membahayakan.</li>
-                        <li class="bd">Form  Fit Out harus diisi dan dilengkapi sesuai dengan urutan : Kontraktor,  Departement (Karyawan GSPE), In Building, Facility Management, Mechanical  Electrical dan terakhir adalah Chief Security. Selanjutnya, Form Asli ditempel  di lantai yang akan di Fit Out.</li>
+                        <li class="bd">Form  Fit Out harus diisi dan dilengkapi sesuai dengan urutan : Kontraktor,  Departement (Karyawan GSPE), In Building, Facility Management, Mechanical  Electrical dan terakhir adalah Chief Security.</li>
                         <li class="bd">Kontraktor  :</li>
                         <span class="bd">Kontraktor harus menyerahkan surat tertulis dari  perusahaan yang berisi ijin, jenis pekerjaan, nama pekerja  &amp; fotocopy KTP, diserahkan selambat  lambatnya 1 hari sebelum pekerjaan dimulai bersamaan dengan <strong><em>Form  Ijin Kerja</em></strong>. Formulir aslinya harus ditempel di pintu masuk lantai yang  akan dikerjakan. Ijin Fit Out tersebut harus dilakuakn pada jam kerja yaitu  Senin – Kamis pukul 08:00 – 17:00 WIB, Jum’at pukul 08:00 – 17:30 WIB, apabila  melewati jam kerja kontraktor wajib mengisi Ijin Lembur Fit Out. Formulir ini  harus diisi secara lengkap dan ditandatangani oleh pihak Kontraktor, Karyawan  GSPE, In Building, Facility Management, Technician dan Security.<br />
                           Ijin  Kerja ini berlaku selama 7 (tujuh) hari setelah tanggal diterimanya Formulir  secara lengkap. Untuk kemudahan bersama, dianjurkan untuk mengajukan formulir  ijin kerja ini sesegera mungkin. </span>
@@ -374,8 +374,8 @@ include('fancy.php');
                             </tr>
                           </table>
                           </td></tr>
-                          <tr><td>                 
-                              <p>&nbsp;</p>                               
+                          <tr><td>
+                              <p>&nbsp;</p>
                           <p>Untuk  permohonaan Approve anda bisa menggunakan telepon yang telah disediakan.<br>
                             <br />
                             Note, <br />
@@ -386,7 +386,7 @@ include('fancy.php');
                           <p>&nbsp;</p>
 <p>Terima Kasih<br />
                         Facility  management GSPE</p></td></tr></table></td>
-                      </tr>                      
+                      </tr>
                   </table>
               </div>
               <div class="TabbedPanelsContent">
@@ -440,7 +440,7 @@ include('fancy.php');
                       <br />
                       <strong>4. WP LIST (working permit list)</strong><br />
                       Meampilkan daftar vendor yang belum mendapatkan approve  dari department- departement yang ada
-                      <table border="0" cellspacing="0" cellpadding="2">                        
+                      <table border="0" cellspacing="0" cellpadding="2">
                         <tr>
                           <td valign="top">1.</td>
                           <td valign="top">IB</td>
@@ -480,10 +480,9 @@ include('fancy.php');
             </div></td>
         </tr>
      </table>
-<?php include('bawah.php');?> 
+<?php include('bawah.php');?>
 <script type="text/javascript">
 <!--
 var TabbedPanels1 = new Spry.Widget.TabbedPanels("TabbedPanels1");
 //-->
 </script>
-

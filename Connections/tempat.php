@@ -1,6 +1,6 @@
-<?php 
+<?php
 switch ($tempat) {
-	case 1 	: $building = "PT VIO Intelligence"; 		$ip_client = '192.168.0.100'; break;
+	case 1 	: $building = "VIO Intelligence"; 		$ip_client = '192.168.0.100'; break;
 	case 2 	: $building = "VIO Intelligence"; 		$ip_client = '10.24.121.74'; break;
 	case 3 	: $building = ""; 		$ip_client = '10.23.11.178'; break;
 	case 4 	: $building = ""; 		$ip_client = '10.29.11.61'; break;
